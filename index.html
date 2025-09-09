@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madu Olak - Toko Online Terpercaya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+<div class="flex items-center space-x-2">
+    <img src="madu.png" alt="Logo" class="h-10 w-auto">
+    <span class="text-2xl font-bold text-blue-600">Madu Olak</span>
+</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+<!-- Hero Banner -->
+<section class="relative bg-cover bg-center text-white py-20 hero-banner">
+  <div class="container mx-auto px-4 text-center bg-black/50 rounded-lg py-12">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">Belanja Mudah, Harga Terjangkau</h1>
+    <p class="text-xl md:text-2xl mb-8 opacity-90">
+      Temukan produk berkualitas dengan harga terbaik di Madu Olak
+    </p>
+    <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+      <a href="produk.html"
+         class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+        Lihat Produk
+      </a>
+      <a href="https://wa.me/6289501254949?text=Halo, saya tertarik dengan produk di Madu Olak"
+         class="inline-block bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition duration-300">
+        <i class="fab fa-whatsapp mr-2"></i>Chat WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CSS -->
+<style>
+  /* Default (Desktop) */
+  .hero-banner {
+    background-image: url('madu_olak_hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Mobile (max 768px) */
+  @media (max-width: 768px) {
+    .hero-banner {
+      background-image: url('madu_olak_mobile.jpg');
+    }
+  }
+</style>
+
+
+
+<!-- Galeri Madu (Featured + Masonry + Lightbox) -->
+<section id="galeri" class="py-16 bg-amber-50/40">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl md:text-4xl font-bold text-amber-900">Galeri Madu</h2>
+      <p class="text-amber-800/80 mt-3">Kilau alami, proses panen, dan kemasan Madu Olak</p>
+    </div>
+
+    <!-- Featured (foto utama) -->
+    <figure class="mb-8 rounded-2xl overflow-hidden shadow ring-1 ring-amber-900/10 group relative cursor-zoom-in">
+      <img src="madu1.jpg" alt="Madu Olak — Featured"
+           class="w-full h-auto object-cover transition duration-500 group-hover:scale-[1.02]" loading="lazy">
+      <figcaption class="absolute left-4 bottom-4 md:left-6 md:bottom-6 
+                         bg-white/70 backdrop-blur-sm text-amber-900 rounded-lg px-3 py-2 md:px-4 md:py-2">
+        <span class="text-sm md:text-base font-semibold">Keaslian yang Terjaga</span>
+      </figcaption>
+    </figure>
+
+    <!-- Masonry 4 foto -->
+    <div class="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
+      <figure class="mb-4 break-inside-avoid rounded-xl overflow-hidden shadow-sm ring-1 ring-amber-900/10 group cursor-zoom-in">
+        <img src="madu2.jpg" alt="Proses panen Madu Olak"
+             class="w-full h-auto object-cover transition duration-300 group-hover:scale-[1.02]" loading="lazy">
+        <figcaption class="p-3 text-sm text-amber-900/80 bg-white/60 backdrop-blur-sm">
+          Panen beretika dari Desa Olak
+        </figcaption>
+      </figure>
+
+      <figure class="mb-4 break-inside-avoid rounded-xl overflow-hidden shadow-sm ring-1 ring-amber-900/10 group cursor-zoom-in">
+        <img src="madu3.jpg" alt="Kemasan higienis Madu Olak"
+             class="w-full h-auto object-cover transition duration-300 group-hover:scale-[1.02]" loading="lazy">
+        <figcaption class="p-3 text-sm text-amber-900/80 bg-white/60 backdrop-blur-sm">
+          Kemasan higienis, siap kirim
+        </figcaption>
+      </figure>
+
+      <figure class="mb-4 break-inside-avoid rounded-xl overflow-hidden shadow-sm ring-1 ring-amber-900/10 group cursor-zoom-in">
+        <img src="madu4.jpg" alt="Sajian madu untuk harian"
+             class="w-full h-auto object-cover transition duration-300 group-hover:scale-[1.02]" loading="lazy">
+        <figcaption class="p-3 text-sm text-amber-900/80 bg-white/60 backdrop-blur-sm">
+          Sajian harian yang menyehatkan
+        </figcaption>
+      </figure>
+
+      <figure class="mb-4 break-inside-avoid rounded-xl overflow-hidden shadow-sm ring-1 ring-amber-900/10 group cursor-zoom-in">
+        <img src="madu5.jpg" alt="Sarang lebah sumber madu"
+             class="w-full h-auto object-cover transition duration-300 group-hover:scale-[1.02]" loading="lazy">
+        <figcaption class="p-3 text-sm text-amber-900/80 bg-white/60 backdrop-blur-sm">
+          Sumber alami dari sarang lebah
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal (native <dialog>) -->
+  <dialog id="madu-lightbox" class="backdrop:bg-black/70 p-0 rounded-2xl overflow-hidden">
+    <div class="relative">
+      <button aria-label="Tutup" class="absolute top-3 right-3 z-10 bg-black/60 text-white rounded-full p-2"
+              onclick="document.getElementById('madu-lightbox').close()">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="madu-lightbox-img" src="" alt="Preview foto madu" class="max-h-[85vh] w-auto object-contain">
+    </div>
+  </dialog>
+</section>
+
+
+
+  <!-- About Content -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <!-- Story Section -->
+        <div class="mb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-800 mb-6">Cerita Kami</h2>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Madu Olak lahir dari potensi alam Desa Olak, Kec. Sungai Mandau, Kab. Siak. Kami bekerja
+                bersama para peramu madu hutan dan peternak lebah lokal untuk menghadirkan madu murni yang
+                dipanen dengan teknik berkelanjutan, tanpa campuran gula atau pemanis buatan.
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-4">
+                Setiap tetes madu kami melalui proses <em>quality control</em>—mulai dari pengecekan kadar air,
+                aroma, hingga kejernihan—agar manfaat alaminya tetap terjaga dari alam sampai ke mejamu.
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                Kami percaya madu bukan hanya manis; ia adalah bagian dari gaya hidup sehat. Karena itu,
+                transparansi asal-usul, cara panen, dan penanganan pasca-panen menjadi komitmen utama kami.
+              </p>
+            </div>
+            <div>
+              <img src="abot.jpg" alt="Tim Madu Olak"
+                   class="w-full rounded-lg shadow-lg object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Manfaat Utama Madu</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="bg-amber-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-shield-virus text-amber-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Daya Tahan Tubuh</h3>
+              <p class="text-gray-600">Kaya antioksidan alami untuk membantu menjaga imunitas harian.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-spa text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Meredakan Batuk & Tenggorokan</h3>
+              <p class="text-gray-600">Tekstur kental dan sifat antimikroba membantu menenangkan tenggorokan.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-heartbeat text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Sumber Energi Alami</h3>
+              <p class="text-gray-600">Glukosa & fruktosa alami cepat diserap tubuh—pas untuk aktivitas harian.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values Section (disesuaikan untuk madu) -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Nilai-Nilai Kami</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-certificate text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">100% Murni</h3>
+              <p class="text-gray-600">Tanpa campuran, tanpa pemanis buatan—<em>pure honey</em> apa adanya.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-leaf text-green-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Panen Berkelanjutan</h3>
+              <p class="text-gray-600">Menjaga koloni lebah & ekosistem—hanya panen sesuai musim & etika.</p>
+            </div>
+            <div class="text-center">
+              <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-flask text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Uji Kualitas</h3>
+              <p class="text-gray-600">Kontrol kadar air & organoleptik agar kualitas konsisten di setiap botol.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Safety & Usage (Ketentuan Konsumsi) -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">Keamanan & Ketentuan Konsumsi</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Cara Konsumsi</h3>
+              <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                <li>1–2 sendok makan per hari, dapat dicampur air hangat/lemon.</li>
+                <li>Simpan di tempat sejuk, kering, dan tertutup rapat.</li>
+                <li>Kristalisasi adalah wajar pada madu murni—rendam botol di air hangat untuk mengembalikan.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3">Perhatian</h3>
+              <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                <li>Tidak dianjurkan untuk bayi usia <strong>&lt; 1 tahun</strong>.</li>
+                <li>Bagi penderita kondisi medis tertentu, konsultasikan dengan tenaga kesehatan.</li>
+                <li>Hindari pemanasan berlebihan agar enzim & nutrisi tetap terjaga.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats Section (relevan untuk madu) -->
+        <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Pencapaian Kami</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div class="text-3xl font-bold text-blue-600 mb-2">3000+</div>
+              <div class="text-gray-600">Pelanggan Puas</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-600 mb-2">10+</div>
+              <div class="text-gray-600">Mitra Peramu/Apiari</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-purple-600 mb-2">15.000+</div>
+              <div class="text-gray-600">Botol Terjual</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-orange-600 mb-2">4.9/5</div>
+              <div class="text-gray-600">Rating Pelanggan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Siap Coba Madu Olak?</h2>
+      <p class="text-xl mb-8 opacity-90">Tanya varian & stok, kami bantu langsung via WhatsApp</p>
+      <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+        <a href="https://wa.me/6289501254949?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Madu%20Olak"
+           class="inline-block bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition duration-300">
+          <i class="fab fa-whatsapp mr-2"></i>Hubungi Kami
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Brand -->
+      <div>
+        <div class="text-2xl font-bold mb-4">
+          <i class="fas fa-shopping-bag mr-2"></i>Madu Olak
+        </div>
+        <p class="text-gray-400">
+          Madu murni dari Desa Olak – alami, sehat, dan penuh manfaat untuk keluarga.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+        <div class="space-y-2 text-gray-400">
+          <p>
+            <i class="fab fa-whatsapp mr-2"></i>
+            <a href="https://wa.me/6289501254949?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Madu%20Olak"
+               target="_blank" class="hover:text-green-400">
+              +62 895-0125-4949
+            </a>
+          </p>
+          <p>
+            <i class="fab fa-instagram mr-2"></i>
+            <a href="https://www.instagram.com/kkndesaolak2025?igsh=MTk2bThwYW53dXYxdw==" 
+               target="_blank" class="hover:text-pink-400">
+              @kkndesaolak2025
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+      <p>&copy; 2024 Madu Olak. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+
+<!-- Script Lightbox -->
+<script>
+  (function () {
+    const dlg = document.getElementById('madu-lightbox');
+    const imgTarget = document.getElementById('madu-lightbox-img');
+
+    // Delegasi klik ke semua gambar di #galeri (featured + masonry)
+    document.querySelectorAll('#galeri img').forEach(img => {
+      img.addEventListener('click', () => {
+        imgTarget.src = img.src;
+        imgTarget.alt = img.alt || 'Preview foto madu';
+        if (typeof dlg.showModal === 'function') dlg.showModal();
+        else window.open(img.src, '_blank');
+      });
+    });
+
+    // Tutup dialog saat klik di luar konten
+    dlg?.addEventListener('click', (e) => {
+      const rect = dlg.getBoundingClientRect();
+      const inDialog = (e.clientX >= rect.left && e.clientX <= rect.right &&
+                        e.clientY >= rect.top && e.clientY <= rect.bottom);
+      if (!inDialog) dlg.close();
+    });
+
+    // ESC untuk tutup
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && dlg.open) dlg.close();
+    });
+  })();
+</script>
+
+</body>
+</html>

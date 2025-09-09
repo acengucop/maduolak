@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Madu Olak</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+<div class="flex items-center space-x-2">
+    <img src="madu.png" alt="Logo" class="h-10 w-auto">
+    <span class="text-2xl font-bold text-blue-600">Madu Olak</span>
+</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="contact.html" class="text-blue-600 font-medium">Contact</a>
+        </div>
+        <button class="md:hidden text-gray-700" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+        <a href="contact.html" class="block py-2 text-blue-600">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="bg-blue-600 text-white py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Hubungi Madu Olak</h1>
+      <p class="text-lg opacity-90">Pesan & konsultasi langsung via WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Informasi Kontak</h2>
+
+            <div class="space-y-6">
+              <!-- WhatsApp -->
+              <div class="flex items-start space-x-4">
+                <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-1">WhatsApp</h3>
+                  <p class="text-gray-600 mb-2">Chat untuk cek stok, varian, & harga terbaru</p>
+                  <a href="https://wa.me/6289501254949?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Madu%20Olak"
+                     class="text-green-600 hover:text-green-700 font-medium" target="_blank" rel="noopener">
+                    +62 895-0125-4949
+                  </a>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-start space-x-4">
+                <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-1">Email</h3>
+                  <p class="text-gray-600 mb-2">Kerja sama & pemesanan partai</p>
+                  <a href="mailto:info@maduolak.com" class="text-blue-600 hover:text-blue-700 font-medium">
+                    info@maduolak.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="flex items-start space-x-4">
+                <div class="bg-pink-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fab fa-instagram text-pink-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-1">Instagram</h3>
+                  <p class="text-gray-600 mb-2">Update panen & testimoni pelanggan</p>
+                  <a href="https://instagram.com/maduolak" target="_blank"
+                     class="text-pink-600 hover:text-pink-700 font-medium" rel="noopener">
+                    @maduolak
+                  </a>
+                </div>
+              </div>
+
+              <!-- Alamat -->
+              <div class="flex items-start space-x-4">
+                <div class="bg-gray-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <i class="fas fa-map-marker-alt text-gray-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-800 mb-1">Alamat</h3>
+                  <p class="text-gray-600">
+                    Desa Olak, Kec. Sungai Mandau<br/>
+                    Kab. Siak, Riau – Indonesia
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours -->
+            <div class="mt-12 bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold text-gray-800 mb-4">Jam Operasional</h3>
+              <div class="space-y-2 text-gray-600">
+                <div class="flex justify-between">
+                  <span>Senin - Jumat</span>
+                  <span>08:00 - 17:00 WIB</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Sabtu</span>
+                  <span>09:00 - 15:00 WIB</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Minggu</span>
+                  <span>Tutup</span>
+                </div>
+              </div>
+              <div class="mt-4 p-3 bg-green-50 rounded-lg">
+                <p class="text-green-700 text-sm">
+                  <i class="fas fa-info-circle mr-2"></i>
+                  Chat WhatsApp tetap fast response selama jam operasional.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <div class="bg-white rounded-lg shadow-md p-8">
+              <h2 class="text-2xl font-bold text-gray-800 mb-6">Kirim Pesan</h2>
+
+              <form id="contactForm" class="space-y-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                  <input type="text" id="name" name="name" required
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <input type="email" id="email" name="email" required
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">No. WhatsApp</label>
+                  <input type="tel" id="phone" name="phone" required
+                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                         placeholder="0895xxxxxxx">
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subjek</label>
+                  <select id="subject" name="subject" required
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option value="">Pilih subjek</option>
+                    <option value="Pertanyaan Produk">Pertanyaan Produk</option>
+                    <option value="Cek Stok & Varian">Cek Stok & Varian</option>
+                    <option value="Pemesanan">Pemesanan</option>
+                    <option value="Reseller/Kerjasama">Reseller/Kerjasama</option>
+                    <option value="Lainnya">Lainnya</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                  <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                            placeholder="Tulis pesan Anda di sini..."></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                  Kirim via WhatsApp
+                </button>
+              </form>
+            </div>
+
+            <!-- Quick Contact Buttons -->
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <a href="https://wa.me/6289501254949?text=Halo,%20saya%20ingin%20bertanya%20tentang%20produk%20Madu%20Olak"
+                 class="bg-green-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-green-600 transition duration-300 text-center"
+                 target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp mr-2"></i>Chat WhatsApp
+              </a>
+
+              <a href="mailto:info@maduolak.com"
+                 class="bg-blue-500 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-600 transition duration-300 text-center">
+                <i class="fas fa-envelope mr-2"></i>Kirim Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-gray-800 text-center mb-12">Pertanyaan yang Sering Diajukan</h2>
+
+        <div class="space-y-6">
+          <!-- FAQ 1 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleFAQ(1)">
+              <div class="flex justify-between items-center">
+                <span>Bagaimana cara memesan Madu Olak?</span>
+                <i class="fas fa-chevron-down transform transition-transform" id="icon-1"></i>
+              </div>
+            </button>
+            <div class="hidden px-6 pb-4 text-gray-600" id="answer-1">
+              Klik tombol “Chat WhatsApp”, sebutkan varian & jumlah. Kami kirim total & opsi pengiriman. Pembayaran via transfer/e-wallet.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleFAQ(2)">
+              <div class="flex justify-between items-center">
+                <span>Apakah madu dijamin murni?</span>
+                <i class="fas fa-chevron-down transform transition-transform" id="icon-2"></i>
+              </div>
+            </button>
+            <div class="hidden px-6 pb-4 text-gray-600" id="answer-2">
+              Ya. Kami tidak menambahkan gula/pemanis. Kristalisasi bisa terjadi pada madu murni—ini normal dan tidak memengaruhi kualitas.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleFAQ(3)">
+              <div class="flex justify-between items-center">
+                <span>Bagaimana penyimpanan yang benar?</span>
+                <i class="fas fa-chevron-down transform transition-transform" id="icon-3"></i>
+              </div>
+            </button>
+            <div class="hidden px-6 pb-4 text-gray-600" id="answer-3">
+              Simpan tertutup rapat, di tempat sejuk & kering. Hindari panas berlebih agar enzim & aroma terjaga.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-gray-200 rounded-lg">
+            <button class="w-full px-6 py-4 text-left font-semibold text-gray-800 hover:bg-gray-50 focus:outline-none"
+                    onclick="toggleFAQ(4)">
+              <div class="flex justify-between items-center">
+                <span>Berapa lama pengiriman?</span>
+                <i class="fas fa-chevron-down transform transition-transform" id="icon-4"></i>
+              </div>
+            </button>
+            <div class="hidden px-6 pb-4 text-gray-600" id="answer-4">
+              Tergantung kurir & lokasi. Rata-rata 2–5 hari kerja. Nomor resi akan dikirim setelah pembayaran terkonfirmasi.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="text-2xl font-bold mb-4">
+            <i class="fas fa-shopping-bag mr-2"></i>Madu Olak
+          </div>
+          <p class="text-gray-400">Madu murni dari Desa Olak—lezat, alami, dan bermanfaat.</p>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+            <li><a href="produk.html" class="text-gray-400 hover:text-white">Produk</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white">About</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+          <div class="space-y-2 text-gray-400">
+            <p><i class="fab fa-whatsapp mr-2"></i>+62 895-0125-4949</p>
+            <p><i class="fas fa-envelope mr-2"></i>info@maduolak.com</p>
+            <p><i class="fab fa-instagram mr-2"></i>@maduolak</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2024 Madu Olak. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function toggleFAQ(id) {
+      const answer = document.getElementById(`answer-${id}`);
+      const icon = document.getElementById(`icon-${id}`);
+      answer.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+
+    // Kirim form ke WhatsApp Madu Olak
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const subject = formData.get('subject');
+      const message = formData.get('message');
+
+      const whatsappMessage =
+        `Halo, saya ${name}.%0A%0A` +
+        `Email: ${email}%0A` +
+        `No. HP: ${phone}%0A` +
+        `Subjek: ${subject}%0A%0A` +
+        `Pesan:%0A${encodeURIComponent(message)}`;
+
+      const whatsappURL = `https://wa.me/6289501254949?text=${whatsappMessage}`;
+      window.open(whatsappURL, '_blank');
+
+      this.reset();
+      alert('Terima kasih! Anda akan diarahkan ke WhatsApp untuk mengirim pesan.');
+    });
+  </script>
+</body>
+</html>
